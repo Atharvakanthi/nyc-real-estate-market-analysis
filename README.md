@@ -1,5 +1,10 @@
 # NYC Real Estate Market Analysis
 
+> **Note on data source:** this project originally targeted Dubai Land Department
+> transaction data; Dubai Pulse was unreachable from the build environment, so
+> NYC Open Data was used instead (see section (b) for the full substitution
+> rationale).
+
 Independent market research analyzing residential and commercial real estate
 transactions across New York City's five boroughs, using publicly available
 NYC Department of Finance sales records.
@@ -209,7 +214,7 @@ or build step required.
 ## Repository structure
 
 ```
-dubai-real-estate-market-analysis/
+nyc-real-estate-market-analysis/
 ├── data/
 │   ├── nyc_rolling_sales_sample.csv   # 120,080-row stratified sample (committed)
 │   └── SOURCE.md                       # exact source URL, license, download date
@@ -227,6 +232,7 @@ dubai-real-estate-market-analysis/
 └── README.md
 ```
 
-Note: this repository's folder name (`dubai-real-estate-market-analysis`) was
-retained from the original project brief even though the dataset actually
-used is NYC, not Dubai — see the substitution rationale above.
+This repository was renamed from its original working title
+(`dubai-real-estate-market-analysis`) to `nyc-real-estate-market-analysis` to
+match the dataset actually used — see the substitution note at the top of
+this README.

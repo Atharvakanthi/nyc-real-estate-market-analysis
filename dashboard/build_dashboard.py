@@ -5,7 +5,7 @@ from plotly.subplots import make_subplots
 import plotly.io as pio
 import os
 
-os.chdir(r"C:\python\dubai-real-estate-market-analysis")
+os.chdir(r"C:\python\nyc-real-estate-market-analysis")
 
 con = duckdb.connect()
 con.execute(open("sql/00_load_raw.sql", encoding="utf-8").read())
@@ -296,7 +296,7 @@ html = f"""<!doctype html>
 </html>
 """
 
-out_path = r"C:\python\dubai-real-estate-market-analysis\dashboard\market_dashboard.html"
+out_path = r"C:\python\nyc-real-estate-market-analysis\dashboard\market_dashboard.html"
 with open(out_path, "w", encoding="utf-8") as f:
     f.write(html)
 
